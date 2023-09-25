@@ -14,15 +14,15 @@ const App = () => {
   const handleClick = option => {
     switch (option) {
       case 'good':
-        setGood(good + 1);
+        setGood(s => s+1);
         break;
 
       case 'neutral':
-        setNeutral(neutral + 1);
+        setNeutral(s => s+1);
         break;
 
       case 'bad':
-        setBad(bad + 1);
+        setBad(s => s+1);
         break;
       default:
         throw new Error('Invalid option');
