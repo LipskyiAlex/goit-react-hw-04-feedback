@@ -36,7 +36,7 @@ const App = () => {
       <Section>
         <FeedbackOptions
           onClick={handleClick}
-          options={['good', 'neutral', 'bad']} // Разобрать
+          options={Object.keys({good,neutral,bad})} // Разобрать
         />
         <Statistics
           good={good}
